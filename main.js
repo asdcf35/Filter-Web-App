@@ -1,5 +1,6 @@
-// picture of nose https://static.wikia.nocookie.net/box-critters/images/2/2f/Clown_nose_large.png/revision/latest?cb=20200425190410
-function preload() {}
+function preload() {
+	img = loadImage(".png");
+}
 
 function setup() {
     div = createDiv('');
@@ -24,10 +25,10 @@ function setup() {
         }
     }
 }
-function draw() {
-    image(video, 0, 0, 300, 300);
+function draw() { 
+	image(video, 0, 0, 300, 300);
+	image(img, 0, 0, 30, 30);
 }
 function take_snapshot() {
     save('myFilterImage.png');
 }
-
